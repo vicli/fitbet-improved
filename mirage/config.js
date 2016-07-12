@@ -68,4 +68,14 @@ export default function() {
         }]
     };
   });
+
+  this.get('/user', function() {
+    data: [{
+      type:'user',
+      id:1, 
+      attributes: {
+        name:'vli'
+      }
+    }]
+  })
 }
