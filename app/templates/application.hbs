@@ -1,0 +1,21 @@
+<div class="navbar">
+	<div class="menu">
+	 	{{#link-to 'index'}}
+	    	<h1 class="left">
+	    		<em>fitbet</em>
+	    	</h1>
+	    {{/link-to}}
+	    <div class="links right">
+	    	{{#link-to 'bets'}}
+	    		Bets
+	    	{{/link-to}}
+	{{!-- 		{{#link-to 'contact'}}
+				Logout
+			{{/link-to}} --}}
+	    </div>
+	  </div>
+</div>
+
+<div class="body">
+	{{outlet}}
+</div>

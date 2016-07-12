@@ -1,0 +1,35 @@
+
+{{!-- {{#app-header user=model.user}}
+	{{app-header.body}}
+{{/app-header}}
+ --}}
+
+ <div class="content-container">
+ 	<div class="welcome">
+ 		Welcome Victoria
+ 	</div>
+
+	{{#each model as |bet|}}
+		{{bet-listing bet=bet}}
+	{{/each}}
+ </div>
+{{!-- <div class="content-container">
+	<div class="welcome-message">
+		<h3>Welcome Victoria </h3>
+		<p>You have {{model.activeBets.length}} active bet remaining!</p>
+	</div>
+	{{#bet-form user=model.user bets=model.bets onSubmit=(route-action 'createBet')}}
+		{{bet-form.body}}
+	{{/bet-form}}
+
+	{{#bet-list bets = model.activeBets}}
+		{{bet-list.body}}
+	{{/bet-list}}
+	{{#bet-list bets = model.inactiveBets}}
+		{{bet-list.body}}
+	{{/bet-list}}
+
+</div>
+
+{{outlet}}
+ --}}
